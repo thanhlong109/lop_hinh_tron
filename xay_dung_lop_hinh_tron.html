@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+</head>
+<body>
+    <script>
+        class Circle{
+            constructor(radius,color){
+                this.radius=radius;
+                this.color=color;
+            }
+            getRadius(){
+                return this.radius;
+            }
+            getArea(){
+                return Math.PI * this.radius * this.radius;
+            }
+        }
+        let radius1 = +prompt("Enter radius");
+        let color = prompt("Enter your color");
+        let circle1 = new Circle(radius1,color);
+        document.write("radius: " + circle1.getRadius()+"<br>Area: " + circle1.getArea()+"<br>Color: " + circle1.color);
+    </script>
+</body>
+</html>
